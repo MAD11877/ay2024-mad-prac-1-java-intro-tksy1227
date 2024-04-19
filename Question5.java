@@ -27,8 +27,7 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("Enter number of integers to be entered: ");
-    int n = in.nextInt();
+    int n = in.nextInt(); // n: Number of integers to be entered
 
     // Create arrays to store the integers and their frequencies
     int[] numbers = new int[n];
@@ -36,7 +35,6 @@ public class Question5
 
     // Loop to get the integers from the user and update the frequencies
     for (int i = 0; i < n; i++) {
-        System.out.print("Enter an integer: ");
         int num = in.nextInt();
         numbers[i] = num;
         frequencies[num]++;
@@ -53,6 +51,6 @@ public class Question5
     }
 
     // Print the mode
-    System.out.println("The mode is: " + mode);
+    System.out.println(mode);
   }
 }
